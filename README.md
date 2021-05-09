@@ -30,3 +30,19 @@ logger.info("Hello World!")
 
 The output will look like this if passing in `.cool`
 
+2021-05-09T16:13:30-0500 🐛 debug thingsAboveAdmin : Testing log levels..
+2021-05-09T16:13:30-0500 ℹ️ info thingsAboveAdmin : Testing log levels..
+2021-05-09T16:13:30-0500 📖 notice thingsAboveAdmin : Testing log levels..
+2021-05-09T16:13:30-0500 ⚠️ warning thingsAboveAdmin : Testing log levels..
+2021-05-09T16:13:30-0500 ⚡ critical thingsAboveAdmin : Testing log levels..
+2021-05-09T16:13:30-0500 🔥 error thingsAboveAdmin : Testing log levels..
+
+
+The output will look like this if passing in `.rainbow`
+
+2021-05-09T16:17:07-0500 🟪 debug thingsAboveAdmin : Testing log levels..
+2021-05-09T16:17:07-0500 🟦 info thingsAboveAdmin : Testing log levels..
+2021-05-09T16:17:07-0500 🟩 notice thingsAboveAdmin : Testing log levels..
+2021-05-09T16:17:07-0500 🟨 warning thingsAboveAdmin : Testing log levels..
+2021-05-09T16:17:07-0500 🟧 critical thingsAboveAdmin : Testing log levels..
+2021-05-09T16:17:07-0500 🟥 error thingsAboveAdmin : Testing log levels..
