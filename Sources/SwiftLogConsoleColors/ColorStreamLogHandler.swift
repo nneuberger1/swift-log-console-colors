@@ -105,23 +105,7 @@ public struct ColorStreamLogHandler: LogHandler {
             : self.prettify(self.metadata.merging(metadata!, uniquingKeysWith: { _, new in new }))
         
         
-        let icon:String
-        switch level {
-        case .trace:
-            icon = "📣"
-        case .debug:
-            icon = "🐛"
-        case .info:
-            icon = "ℹ️"
-        case .notice:
-            icon = "📖"
-        case .warning:
-            icon = "⚠️"
-        case .critical:
-            icon = "⚡"
-        case .error:
-            icon = "🔥"
-        }
+        let icon = logIconType.toIcon(logLevel: level)
 
         var stream = self.stream
         stream.write("\(self.timestamp()) \(icon) \(level) \(self.label) :\(prettyMetadata.map { " \($0)" } ?? "") \(message)\n")
