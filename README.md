@@ -12,7 +12,7 @@ Then, during your application startup, do:
 
 ```swift
 import Logging
-import LoggingSyslog
+import SwiftLogConsoleColors
 
 // Initialize the logger
 ColorStreamLogHandler.standardOutput(label: label, logIconType: .cool)
