@@ -23,9 +23,9 @@ public enum LogIconType {
                 return "📖"
             case .warning:
                 return "⚠️"
-            case .critical:
-                return "⚡"
             case .error:
+                return "⚡"
+            case .critical:
                 return "🔥"
             }
             
@@ -41,9 +41,9 @@ public enum LogIconType {
                 return "🟩"
             case .warning:
                 return "🟨"
-            case .critical:
-                return "🟧"
             case .error:
+                return "🟧"
+            case .critical:
                 return "🟥"
             }
         }
